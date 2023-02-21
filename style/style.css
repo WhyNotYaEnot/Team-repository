@@ -1,0 +1,121 @@
+/* ОСНОВНІ СТИЛІ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+  
+/* НАВІГАЦІЙНЕ МЕНЮ */
+  header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+/* лого */
+.logo a {
+    margin-left: 300px;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.logo li {
+    list-style: none;
+}
+/* навігація */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 100px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+.email a {
+    color: #2196F3;
+}
+.email:hover {
+    border-bottom: 1px solid #2196F3;
+}
+/* ШАПКА */
+.banner {
+    background-color: #2F303A;
+    background-image: url('banner.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.banner h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+  
+
+/* ПРО НАС ТА СЕРВІС */
+section {
+    padding: 3rem 0;
+}
+  
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+  
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+  
+/* НАША КОМАНДА */
+.team-member {
+    text-align: center;
+}
+  
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+  
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+  
+.team-member p {
+    font-size: 1.2rem;
+    color: #999;
+}
+  
+/* Підвал */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+  
+footer p {
+    font-size: 1.2rem;
+}
+  
