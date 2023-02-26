@@ -67,8 +67,42 @@ nav a {
     text-align: center;
     text-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-  
-
+/* КОРОТКО ПРО НАШУ КОМАНДУ */
+.ourteam {
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.ourteam ul {
+    padding: 0;
+    margin: 0;
+  }
+.ourteam p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.ourteam h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.ourteam li {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
 /* ПРО НАС ТА СЕРВІС */
 section {
     padding: 3rem 0;
