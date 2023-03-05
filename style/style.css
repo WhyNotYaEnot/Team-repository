@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+
 /* ОСНОВНІ СТИЛІ */
 * {
     margin: 0;
@@ -20,7 +22,7 @@ body {
   }
 /* лого */
 .logo a {
-    margin-left: 300px;
+    margin-left: 200px;
 
     font-size: 1.5rem;
     font-weight: bold;
@@ -31,6 +33,9 @@ body {
     list-style: none;
 }
 /* навігація */
+a{
+    font-family: 'Roboto', sans-serif;
+}
 nav ul {
     display: flex;
     list-style: none;
@@ -52,23 +57,47 @@ nav a {
 }
 /* ШАПКА */
 .banner {
-    background-color: #2F303A;
-    background-image: url('banner.jpg');
+    background-color: #2F303A; 
     background-size: cover;
-    height: 500px;
+    height: 650px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
   
 .banner h1 {
+    max-width: 620px;
+    margin-bottom: 70px;
+
     color: #fff;
+    font-family: 'Roboto', sans-serif;
+
     font-size: 3rem;
     text-align: center;
     text-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+.banner button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: #2196F3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #E5E5E5;
+}
+.banner button:hover {
+    background-color: #2176f3;
+}
+
 /* КОРОТКО ПРО НАШУ КОМАНДУ */
 .ourteam {
+    display: flex;
+    justify-content: center;
     margin: auto;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -78,7 +107,7 @@ nav a {
     margin: 0;
   }
 .ourteam p {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -87,7 +116,7 @@ nav a {
     color: #757575;
 }
 .ourteam h3 {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -95,6 +124,8 @@ nav a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
+
+    margin-bottom   : 10px;
 }
 .ourteam li {
     display: inline-block;
@@ -103,29 +134,41 @@ nav a {
     box-sizing: border-box;
     padding: 0 20px;
 }
-/* ПРО НАС ТА СЕРВІС */
+/* ПРО НАС */
 section {
+    background-color: #E5E5E5;
     padding: 3rem 0;
-}
-  
+} 
 section h2 {
+    font-family: 'Roboto', sans-serif;
+
     text-align: center;
-    margin-bottom: 2rem;
-}
-  
+}  
 .container {
+    display: flex;
+    justify-content: center;
+
     max-width: 800px;
     margin: 0 auto;
     padding: 0 1rem;
 }
-  
+.our-works img {
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+}  
 /* НАША КОМАНДА */
+#team{
+    background-color: #F5F4FA;
+}
 .team-member {
     text-align: center;
 }
   
 .team-member img {
-    width: 200px;
+    position: fixed;
+
+    max-width: 50px;
     height: 200px;
     border-radius: 50%;
     margin-bottom: 1rem;
