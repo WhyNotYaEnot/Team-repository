@@ -13,17 +13,16 @@ body {
 }
   
 /* НАВІГАЦІЙНЕ МЕНЮ */
-  header {
+header {
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
     background-color: #fff;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
+}
 /* лого */
 .logo a {
-    margin-left: 200px;
-
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;

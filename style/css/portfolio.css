@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up basic styles */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+/* НАВІГАЦІЙНЕ МЕНЮ */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+/* лого */
+.logo a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.logo li {
+    list-style: none;
+}
+/* навігація */
+a{
+    font-family: 'Roboto', sans-serif;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 100px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+.email a {
+    color: #2196F3;
+}
+.email:hover {
+    border-bottom: 1px solid #2196F3;
+}
+  /* Portfolio section */
+  #portfolio {
+    padding: 50px;
+  }
+  
+  #portfolio h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .product-filter {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .product-filter label {
+    font-size: 18px;
+  }
+  
+  .product-filter select {
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  #catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product {
+    width: calc(33.3333% - 20px);
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+  
+  .product img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .product p {
+    font-size: 16px;
+  }
+  /* Підвал */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+  
+footer p {
+    font-size: 1.2rem;
+}
