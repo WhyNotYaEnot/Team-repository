@@ -165,11 +165,11 @@ section h2 {
 }
   
 .team-member img {
-    position: fixed;
+   /*position: fixed;*/
 
-    max-width: 50px;
+    max-width: 150px;
     height: 200px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     margin-bottom: 1rem;
 }
   
