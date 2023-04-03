@@ -162,14 +162,12 @@ section h2 {
 }
 .team-member {
     text-align: center;
+    margin: 5%;
 }
   
 .team-member img {
-   /*position: fixed;*/
-
     max-width: 150px;
-    height: 200px;
-    /*border-radius: 50%;*/
+    max-height: 250px;
     margin-bottom: 1rem;
 }
   
