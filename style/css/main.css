@@ -33,28 +33,40 @@ header {
     list-style: none;
 }
 /* навігація */
-a{
-    font-family: 'Roboto', sans-serif;
-}
-nav ul {
-    display: flex;
-    list-style: none;
+.logo {
+margin-right: 15px;
 }
 
-nav li {
-    margin-left: 100px;
+.pages {
+display: flex;
+gap: 25px;
 }
-  
-nav a {
-    text-decoration: none;
-    color: #333;
+
+.pages a {
+text-decoration: none;
+color: #333;
+padding: 10px;
 }
-.email a {
+
+.email_phone {
+display: flex;
+gap: 25px;
+}
+
+.email_phone a {
+text-decoration: none;
+padding: 10px;
+}
+.email {
     color: #2196F3;
 }
 .email:hover {
-    border-bottom: 1px solid #2196F3;
+    border-bottom: 2px solid #2196F3;
 }
+a{
+    font-family: 'Roboto', sans-serif;
+}
+
 /* ШАПКА */
 .banner {
     background-color: #2F303A; 
