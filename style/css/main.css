@@ -5,9 +5,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
-  
+
 body {
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
@@ -20,8 +20,9 @@ header {
     align-items: center;
     padding: 1rem;
     background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 /* лого */
 .logo a {
     font-size: 1.5rem;
@@ -29,47 +30,68 @@ header {
     text-decoration: none;
     color: #333;
 }
+
 .logo li {
     list-style: none;
 }
+
 /* навігація */
-.logo {
-margin-right: 15px;
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 1300px;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 .pages {
-display: flex;
-gap: 25px;
+    display: flex;
+    margin-left: 15%;
 }
 
 .pages a {
-text-decoration: none;
-color: #333;
-padding: 10px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+.pages a:hover {
+    color: #2196F3;
 }
 
 .email_phone {
-display: flex;
-gap: 25px;
+    margin-left: 35%;
 }
 
 .email_phone a {
-text-decoration: none;
-padding: 10px;
+    text-decoration: none;
+    padding: 10px;
 }
+
 .email {
     color: #2196F3;
 }
-.email:hover {
-    border-bottom: 2px solid #2196F3;
+
+.phone {
+    color: #333;
 }
-a{
-    font-family: 'Roboto', sans-serif;
+
+.phone:hover {
+    border-bottom: 1.5px solid #2196F3;
+}
+
+.email:hover {
+    border-bottom: 1.5px solid #2196F3;
 }
 
 /* ШАПКА */
 .banner {
-    background-color: #2F303A; 
+    background-color: #2F303A;
     background-size: cover;
     height: 650px;
     display: flex;
@@ -77,7 +99,7 @@ a{
     flex-direction: column;
     align-items: center;
 }
-  
+
 .banner h1 {
     max-width: 620px;
     margin-bottom: 70px;
@@ -87,13 +109,14 @@ a{
 
     font-size: 3rem;
     text-align: center;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 .banner button {
     display: block;
     width: 200px;
     height: 50px;
-    
+
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -102,6 +125,7 @@ a{
     font-size: 1.2rem;
     color: #E5E5E5;
 }
+
 .banner button:hover {
     background-color: #2176f3;
     stroke: #E5E5E5;
@@ -115,10 +139,12 @@ a{
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
+
 .ourteam ul {
     padding: 0;
     margin: 0;
-  }
+}
+
 .ourteam p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -128,6 +154,7 @@ a{
     letter-spacing: 0.03em;
     color: #757575;
 }
+
 .ourteam h3 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -138,8 +165,9 @@ a{
     text-transform: uppercase;
     color: #212121;
 
-    margin-bottom   : 10px;
+    margin-bottom: 10px;
 }
+
 .ourteam li {
     display: inline-block;
     vertical-align: top;
@@ -147,16 +175,19 @@ a{
     box-sizing: border-box;
     padding: 0 20px;
 }
+
 /* ПРО НАС */
 section {
     background-color: #E5E5E5;
     padding: 3rem 0;
-} 
+}
+
 section h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 2.5rem;
-}  
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -164,15 +195,18 @@ section h2 {
     margin: 0 auto;
     padding: 0 1rem;
 }
+
 .our-works img {
     margin: 20px;
     width: 300px;
     height: 250px;
-}  
+}
+
 /* НАША КОМАНДА */
-#team{
+#team {
     background-color: #F5F4FA;
 }
+
 .team-member {
     text-align: center;
     margin: 5%;
@@ -180,13 +214,13 @@ section h2 {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-  
+
 .team-member img {
     max-width: 250px;
     max-height: 350px;
     margin-bottom: 1rem;
 }
-  
+
 #team h2 {
     font-size: 2.5rem;
     margin-bottom: 0.3rem;
@@ -196,7 +230,7 @@ section h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-  
+
 .team-member p {
     font-size: 1.2rem;
     color: #999;
@@ -219,14 +253,16 @@ footer {
     padding: 1rem;
     text-align: left;
 }
+
 footer h1 {
     position: relative;
     font-family: 'Raleway';
     font-weight: 700;
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-size: 1.2rem;
     padding-bottom: 1rem;
-} 
+}
+
 footer h2 {
     position: relative;
     font-family: 'Raleway';
@@ -236,18 +272,22 @@ footer h2 {
     color: #2196F3;
     letter-spacing: 0.03em;
 }
+
 footer li {
     list-style-type: none;
 }
+
 address {
     padding-top: 2rem;
     position: relative;
-    left:-20%;
+    left: -20%;
 }
+
 .svg-links {
     stroke-width: 0.15rem;
     stroke: none;
 }
+
 .svg-links svg:hover {
     stroke: #2196F3;
 }
