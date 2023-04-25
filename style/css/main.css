@@ -51,6 +51,7 @@ a {
 
 .pages {
     display: flex;
+    gap: 20px;
     margin-left: 15%;
 }
 
