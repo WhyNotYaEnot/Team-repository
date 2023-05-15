@@ -5,10 +5,10 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
+    width: 100%;
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
 }
@@ -31,17 +31,13 @@ header {
     color: #333;
 }
 
-.logo li {
-    list-style: none;
-}
-
 /* навігація */
 nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-width: 1300px;
+    min-width: 90%;
 }
 
 a {
@@ -218,7 +214,7 @@ section h2 {
 .container {
     display: flex;
     justify-content: center;
-    max-width: 800px;
+    max-width: 150%;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -232,11 +228,12 @@ section h2 {
 /* НАША КОМАНДА */
 #team {
     background-color: #eeeef4;
+    min-width: 100%;
 }
 
 .team-member {
     text-align: center;
-    margin: 5%;
+    margin: 2%;
     border: 0.1rem solid #E5E5E5;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -266,12 +263,14 @@ section h2 {
 
 /* НАШІ РЕГУЛЯРНІ КЛІЄНТИ*/
 .our-clients-div {
-    margin: 5%;
+    /* margin: auto; */
+    margin:     2%;
+    /* width: 10%; */
 }
 
 .our-clients-div svg:hover {
     fill: #2196F3;
-}
+} 
 
 /* Підвал */
 footer {
@@ -281,6 +280,7 @@ footer {
     height: 130px;
     text-align: left;
 }
+
 .container-footer {
     display: flex;
     justify-content: left;
@@ -288,7 +288,6 @@ footer {
 }
 
 .container-footer-adress {
-    
 }
 
 footer h1 {
@@ -300,26 +299,35 @@ footer h1 {
     padding-bottom: 1rem;
 }
 
-footer h2 {
-    position: relative;
-    font-family: 'Raleway';
-    font-size: 1.2rem;
-    padding-right: 1.5rem;
-    font-weight: 700;
-    color: #2196F3;
-    letter-spacing: 0.03em;
+.logo-footer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none   ;
+    color: #fff;
+}
+.adress ul {
+    list-style: none;
 }
 
-footer li {
-    list-style-type: none;
+.adress li {
+    padding-top: 0.5rem;
 }
 
-adress {
-    padding-top: 2rem;
-    position: absolute;
-    padding-left: 0.5rem;
-    
+.link {
     list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+}
+.link-email {
+    list-style-type: none;
+    text-decoration: none;
+    color: #a7a7a7;
+}
+
+.link-phone {
+    list-style-type: none;
+    text-decoration: none;
+    color: #a7a7a7;
 }
 
 .svg-links {
