@@ -128,8 +128,14 @@ a {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    max-width: 75%;
-  }
+    width: 100%;
+    }
+    .catalog{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
   
   .product {  
     width: calc(33.3333% - 20px);
@@ -159,6 +165,11 @@ footer {
     padding: 1rem;
     text-align: left;
 }
+.container-footer {
+  display: flex;
+  justify-content: left;
+  padding-left: 5rem;
+}
 footer h1 {
   position: relative;
   font-family: 'Raleway';
@@ -166,6 +177,46 @@ footer h1 {
   color:#FFFFFF;
   font-size: 1.2rem;
 } 
+.logo-footer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none   ;
+  color: #fff;
+}
+.adress ul {
+  list-style: none;
+}
+.adress li {
+  padding-top: 0.5rem;
+}
+
+.link {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+.link-email {
+  list-style-type: none;
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+.link-phone {
+  list-style-type: none;
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+.svg-links {
+  padding-left: 7rem;
+  stroke-width: 0.15rem;
+  stroke: none;
+}
+
+.svg-links svg:hover {
+  stroke: #2196F3;
+}
+
 footer h2 {
   position: relative;
   font-family: 'Raleway';
