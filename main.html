@@ -41,7 +41,44 @@
 			<img id="banner-image" src="style/images/Main/Banner.png" alt="Banner image">
 			<div class="banner-content">
 				<h1>Эффективные решения для вашего бизнеса</h1>
-				<button>Заказать услугу</button>
+				<button class="order-service-button">Заказать услугу</button>
+
+    <div class="registration-form-overlay">
+      <div class="registration-form">
+        <button class="close-button">×</button>
+        <h3>Оставьте свои данные, мы вам перезвоним</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">Имя</label>
+			<i class="fa-solid fa-user fa-lg"></i>
+            <input type="text" id="name" name="name" required>
+		
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+			<i class="fa-solid fa-phone fa-lg"></i>
+            <input type="tel" id="phone" name="phone"  required>
+          </div>
+          <div class="form-group">
+            <label for="email">Почта</label>
+			<i class="fa-solid fa-envelope fa-lg"></i>
+            <input type="email" id="email" name="email"  required>
+          </div>
+          <div class="form-group">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" placeholder="Введите текст"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label class="agree-label" for="agree">Соглашаюсь с рассылкой и принимаю <a href="#" class="policy__link">Условия договора</a></label>
+			
+          </div>
+          <div class="submit-button">
+          <button type="submit">Отправить</button>
+        </div>
+        </form>
+      </div>
+    </div>
 			</div>
 		</div>
 
@@ -447,6 +484,20 @@
               </div>
 		</footer>
 	</div>
+	<script>
+		const orderServiceButton = document.querySelector('.order-service-button');
+		const registrationFormOverlay = document.querySelector('.registration-form-overlay');
+		const closeButton = document.querySelector('.close-button');
+	
+		orderServiceButton.addEventListener('click', function() {
+	  registrationFormOverlay.style.display = 'flex';
+	});
+	
+		closeButton.addEventListener('click', function() {
+	  registrationFormOverlay.style.display = 'none';
+	});
+	
+	</script>
 </body>
 
 </html>
