@@ -515,3 +515,8 @@ footer h1 {
   .networks_title{
     font-weight: bolder;
   }
+
+  @media only screen and (max-width: 768px) {
+  
+    }
+}
