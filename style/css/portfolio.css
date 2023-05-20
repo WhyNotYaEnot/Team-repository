@@ -263,6 +263,9 @@ footer h1 {
   stroke-width: 0.15rem;
   stroke: none;
 }
+.svg-links h1{
+  margin-bottom: 10%;
+}
 
 .svg-links svg:hover {
   stroke: #2196F3;
@@ -281,4 +284,49 @@ address {
   padding-top: 2rem;
   position: relative;
   left:-20%;
+}
+
+
+
+.subscribe {
+  position: absolute;
+ margin-top: -7%;
+ margin-left: 50%;
+
+}
+
+.subscribe_field {
+  display: flex;
+
+}
+
+.subscribe_input {
+  margin-top: 7%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #b1b1b1;
+  margin-right: 10px;
+  width: 20rem;
+  background-color: transparent;
+}
+
+.btn_subscribe_btn {
+  position: absolute;
+  margin-top: -12%;
+  margin-left: 100%;
+  padding: 4% 5% 4% 5%;
+  width: 10rem;
+  border-radius: 4%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_subscribe_btn span {
+  font-weight: bolder;
+}
+
+.networks_title{
+  font-weight: bolder;
 }
