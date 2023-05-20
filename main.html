@@ -33,6 +33,11 @@
 					<a class="email" href="mailto:info@devstudio.com">info@example.com</a>
 					<a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
 				</div>
+				 <button class="navigation-toggle">
+      				<span class="bar"></span>
+      				<span class="bar"></span>
+      				<span class="bar"></span>
+    				</button>
 			</nav>
 		</header>
 
@@ -268,7 +273,7 @@
 		<!-- НАШІ РЕГУЛЯРНІ КЛІЄНТИ -->
 		<section id="our-clients">
 			<h2>Постоянные клиенты</h2>
-			<div class="container">
+			<div class="container-our-clients">
 				<div class="our-clients-div">
 					<svg xmlns="http://www.w3.org/2000/svg" width="170" height="92" fill="none">
 						<path fill="#E5E5E5" d="M0 0h170v92H0z" />
@@ -496,6 +501,15 @@
 	  registrationFormOverlay.style.display = 'none';
 	});
 	
+	document.addEventListener('DOMContentLoaded', function () {
+  const navigationToggle = document.querySelector('.navigation-toggle');
+  const header = document.querySelector('header');
+
+  navigationToggle.addEventListener('click', function () {
+    header.classList.toggle('menu-open');
+  });
+});
+
 	</script>
 </body>
 
