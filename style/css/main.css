@@ -517,6 +517,10 @@ footer h1 {
   }
 
   @media only screen and (max-width: 768px) {
-  
+    .ourteam{
+        flex-direction: column;
     }
-}
+    .ourteam{
+        width: 100%;
+    }
+    }
