@@ -50,18 +50,18 @@
         <form>
           <div class="form-group">
             <label for="name">Имя</label>
-			<i class="fa-solid fa-user fa-lg"></i>
+			<i class="fa-solid fa-user fa-lg" id="fa-solid"></i>
             <input type="text" id="name" name="name" required>
 		
           </div>
           <div class="form-group">
             <label for="phone">Телефон</label>
-			<i class="fa-solid fa-phone fa-lg"></i>
+			<i class="fa-solid fa-phone fa-lg" id="fa-solid"></i>
             <input type="tel" id="phone" name="phone"  required>
           </div>
           <div class="form-group">
             <label for="email">Почта</label>
-			<i class="fa-solid fa-envelope fa-lg"></i>
+			<i class="fa-solid fa-envelope fa-lg" id="fa-solid"></i>
             <input type="email" id="email" name="email"  required>
           </div>
           <div class="form-group">
@@ -74,7 +74,7 @@
 			
           </div>
           <div class="submit-button">
-          <button type="submit">Отправить</button>
+          <button type="submit" class="submit_button">Отправить</button>
         </div>
         </form>
       </div>
@@ -472,11 +472,10 @@
                     id="subscribe-email"
                     placeholder="E-mail"
                     required
-                    class="subscribe_input"
+                    class="subscribe-input"
                     aria-label="Введите почту для будущей рассылки"
                   />
-                  
-                </form>
+					</form>
                 <button type="submit" class="btn_subscribe_btn">
                     <span>Подписаться</span>
                     <i class="fa-solid fa-paper-plane fa-lg" style="margin-left: 3%;"></i>

@@ -157,9 +157,9 @@ label {
     text-align: left;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
+#name,
+#phone,
+#email,
 textarea {
     width: 100%;
     padding: 10px;
@@ -171,7 +171,7 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 
-button[type="submit"] {
+.submit_button{
     padding: 3% 5% 3% 5%;
     border-radius: 4px;
     background-color: #007bff;
@@ -183,7 +183,7 @@ button[type="submit"] {
     box-shadow: 5px 5px 5px rgb(190, 190, 190) ;
 }
 
-button[type="submit"]:hover {
+.submit_button:hover {
     background-color: #0056b3;
 }
 
@@ -198,7 +198,7 @@ button[type="submit"]:hover {
     color: #2196F3;
 }
 
-i.fa-solid {
+i#fa-solid {
     padding: 1%;
     line-height: 30px;
     text-align: center;
@@ -207,7 +207,7 @@ i.fa-solid {
     z-index: 1;
     float: left;
   }
-  i.fa-solid + input {
+  i#fa-solid + input {
     padding-left: 6%;
   }
   input[type="text"]:focus {
@@ -485,7 +485,7 @@ footer h1 {
   
   }
   
-  .subscribe_input {
+  .subscribe-input {
     margin-top: 7%;
     padding: 10px;
     border-radius: 4px;
@@ -515,3 +515,12 @@ footer h1 {
   .networks_title{
     font-weight: bolder;
   }
+
+  @media only screen and (max-width: 768px) {
+    .ourteam{
+        flex-direction: column;
+    }
+    .ourteam{
+        width: 100%;
+    }
+    }
