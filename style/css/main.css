@@ -21,6 +21,7 @@ header {
     padding: 1rem;
     background-color: #ffffff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: auto;
 }
 
 /* лого */
@@ -35,9 +36,9 @@ header {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    min-width: 90%;
+    width: 100%;
 }
 
 a {
@@ -62,7 +63,6 @@ a {
 }
 
 .email_phone {
-    margin-left: 35%;
 }
 
 .email_phone a {
@@ -85,6 +85,11 @@ a {
 .email:hover {
     border-bottom: 1.5px solid #2196F3;
 }
+
+.navigation-toggle {
+    display: none;
+}
+
 .registration-form-overlay {
     position: fixed;
     top: 0;
@@ -102,7 +107,7 @@ a {
     padding: 20px;
     border-radius: 5px;
     position: relative;
-    width: 35%;
+    /* width: 35%; */
 }
 
 .close-button {
@@ -287,6 +292,7 @@ i#fa-solid {
 .ourteam {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: auto;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -418,7 +424,7 @@ footer {
 .container-footer {
     display: flex;
     justify-content: left;
-    padding-left: 5rem;
+    flex-wrap: wrap;
 }
 
 .container-footer-adress {
@@ -476,33 +482,26 @@ footer h1 {
 
 
 .subscribe {
-    position: absolute;
-   margin-top: -7%;
-   margin-left: 50%;
-  
-  }
-  
-  .subscribe_field {
     display: flex;
-  
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 2rem;
   }
-  
+  .subscribe-form 
   .subscribe-input {
-    margin-top: 7%;
-    padding: 10px;
+    margin-top: 1rem;
     border-radius: 4px;
     border: 1px solid #b1b1b1;
-    margin-right: 10px;
     width: 20rem;
+    height: 2.5rem;
     background-color: transparent;
   }
   
   .btn_subscribe_btn {
-    position: absolute;
-    margin-top: -12%;
-    margin-left: 100%;
-    padding: 4% 5% 4% 5%;
-    width: 10rem;
+    margin-top: 1.9rem;
+    margin-left: 2rem; 
+    width: 17rem;
+    height: 3rem;
     border-radius: 4%;
     background-color: #007bff;
     color: #fff;
@@ -515,11 +514,136 @@ footer h1 {
   }
   
   .networks_title{
+    display: flex;
     font-weight: bolder;
   }
 
+/* small screen */
+@media (max-width: 1400px) {
+    .ourteam-text{
+        width: 40%;
+        /* margin-left:30%;
+        margin-right:30%; */
+    }
+    .subscribe{
+        text-align: center;
+        flex-direction: column;
+        margin-left: 3rem;
+    }
+}
+@media (max-width: 1275px) {
+    .container-our-clients {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+@media (max-width: 1169px) and (min-width: 851px) {
+    .container {
+        flex-direction: column;
+        /* width: 100%;  */
+    }
+    .our-works{
+        text-align: center;
+     }
+     .our-works img{
+       width: 50%;
+       height: auto;
+     }
+     .container-team{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-auto-rows: auto;
+        gap: 10px;
+     }
+     .team-member img{
+        width: 100%;
+        height: auto;
+     }
+     .container-our-clients{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px; 
+       margin-left: 10%;
+    }
+
+    .subscribe{
+       flex-direction: column;
+       margin-left: 2rem;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 3rem;
+        height: 330px;
+        text-align: left;
+
+    } 
+}
 /* Table media */
 @media (max-width: 850px) and (min-width: 450px) {
+
+    nav {
+        justify-content: center;
+        width: auto;
+    }
+
+    .pages {
+        display: none;
+        align-items: center;
+      }
+    
+      .email_phone, .email_phone svg {
+        display: none;
+      }
+    
+      .navigation-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        z-index: 2;
+      }
+    
+      .pages {
+        background-color: #fff;
+        flex-direction: column;
+        margin-top: -40%;
+        font-size: 120%;
+      }
+    
+      .email_phone {
+        flex-direction: column;
+        margin-top: 65%;
+        margin-left: -40%;
+        font-size: 150%;
+      }
+    
+      .navigation-toggle .bar {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        margin-bottom: 6px;
+      }
+    
+      .menu-open .pages {
+        display: flex;
+      }
+    
+      .menu-open .email_phone {
+        display: flex;
+      }
+    
+      header.menu-open .logo {
+        display: none;
+      }
+
     .ourteam{
         display: grid;
             grid-template-columns: repeat(2, 1fr); 
@@ -527,12 +651,14 @@ footer h1 {
             gap: 10px;
          }
          .ourteam-text{
-            width: 80%;
-            margin-left:10% ;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin-bottom: 20px;
          }
          .container{
             flex-direction: column;
-            width: 100%; 
+            width: 90%; 
          }
          .our-works{
             margin-left: 10%;
@@ -558,95 +684,130 @@ footer h1 {
             grid-gap: 10px; 
            margin-left: 10%;
         }
+
         footer {
             background-color: #333;
             color: #fff;
             padding: 3rem;
-            height: 330px;
-            text-align: left;
+            height: 430px;
+            /* text-align: left; */
     
-        } 
-        .networks_title{
-            margin-left: 15%;
         }
-        .subscribe {
-            margin-top: 10%;
-            margin-left: 15%;
+    
+        .container-footer{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding-left: 0;
+        }
+        .container-footer-adress{
+            width: 100%;
+            text-align: center;
+        }
+    
+        .svg-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 0;
+            padding-top: 2rem;
+    
+            width: 100%;    
+        }
+    
+    
+        .subscribe{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 5%;
+            margin-left: 0;
+        }
+        .subscribe_field{
+            /* margin-left: -30%;  */
         }
         .btn_subscribe_btn{
-            margin-top: 5%;
-            margin-left: 25%;
+            text-align: center; 
+        }
+        .networks_title {
+            display: flex;
+            justify-content: center;
+            text-align: center;
         }
   }
 
-
-
-
-
-  /* Mobile media */
-
-   /* НАВІГАЦІЙНЕ МЕНЮ  */
-  @media (max-width: 700px) {
-    .pages {
-      display: none;
+  @media (max-width: 600px) {
+    .container-our-clients {
+        grid-template-columns: repeat(2, 1fr);
     }
-  
-    .email_phone {
-      display: none;
-    }
-  
-    .navigation-toggle {
-      display: block;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-      background: transparent;
-      border: none;
-      z-index: 2;
-    }
-  
-    .pages {
-      background-color: #fff;
-      flex-direction: column;
-      margin-top: -40%;
-      font-size: 120%;
-    }
-  
-    .email_phone {
-      flex-direction: column;
-      margin-top: 65%;
-      margin-left: -40%;
-      font-size: 150%;
-    }
-  
-    .navigation-toggle .bar {
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: #333;
-      margin-bottom: 6px;
-    }
-  
-    .menu-open .pages {
-      display: flex;
-    }
-  
-    .menu-open .email_phone {
-      display: flex;
-    }
-  
-    header.menu-open .logo {
-      display: none;
-    }
-    .logo{
-    margin-left: 20%;
-}
   }
 
+   /* НАВІГАЦІЙНЕ МЕНЮ  */
+  
+
   @media (max-width: 450px) {
+    nav {
+        justify-content: center;
+        width: auto;
+    }
+
+    .pages {
+        display: none;
+        align-items: center;
+      }
+    
+      .email_phone, .email_phone svg {
+        display: none;
+      }
+    
+      .navigation-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        z-index: 2;
+      }
+    
+      .pages {
+        background-color: #fff;
+        flex-direction: column;
+        margin-top: -40%;
+        font-size: 120%;
+      }
+    
+      .email_phone {
+        flex-direction: column;
+        margin-top: 65%;
+        margin-left: -40%;
+        font-size: 150%;
+      }
+    
+      .navigation-toggle .bar {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        margin-bottom: 6px;
+      }
+    
+      .menu-open .pages {
+        display: flex;
+      }
+    
+      .menu-open .email_phone {
+        display: flex;
+      }
+    
+      header.menu-open .logo {
+        display: none;
+      }
+
     .ourteam {
       flex-direction: column;
       align-items: center;
@@ -674,8 +835,8 @@ footer h1 {
         width: 100%;
       }
       .team-member img{
-        width: 380px;
-        height: 380px;
+        width: 100%;
+        height: 300px;
       }
       .container-our-clients{
         display: grid;
@@ -684,13 +845,12 @@ footer h1 {
             gap: 10px;
          }
 
-
       footer {
         background-color: #333;
         color: #fff;
         padding: 3rem;
         height: 430px;
-        text-align: left;
+        /* text-align: left; */
 
     }
 
@@ -698,33 +858,43 @@ footer h1 {
         display: flex;
         align-items: center;
         width: 100%;
+        padding-left: 0;
     }
     .container-footer-adress{
-         margin-top: -30%;
-        width: 450px;
-    }
-    
-    .svg-links{
-        display: flex;
-        align-items: center;
         width: 100%;
-        margin-top: 30%;
-        margin-left: -100%;
+        text-align: center;
     }
 
+    .svg-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 0;
+        padding-top: 2rem;
+
+        width: 100%;    
+    }
+
+
     .subscribe{
-     margin-top: 20%;
-     margin-left: 15%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20%;
+        margin-left: 15%;
     }
     .subscribe_field{
-        width: 440px;
-        margin-left: -15%;
+        margin-left: -30%; 
     }
     .btn_subscribe_btn{
         margin-top: 10%;
-        margin-left: 5%;
+        margin-left: -5%;
     }
-
+    .networks_title {
+        width: 100%;
+        text-align: center;
+    }
   } 
 
 
