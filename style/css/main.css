@@ -417,7 +417,6 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 3rem;
-    height: 130px;
     text-align: left;
 }
 
@@ -563,7 +562,7 @@ footer h1 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px; 
-       margin-left: 10%;
+        margin-left: 10%;
     }
 
     .subscribe{
@@ -584,13 +583,13 @@ footer h1 {
 @media (max-width: 850px) and (min-width: 450px) {
 
     nav {
-        justify-content: center;
-        width: auto;
+        justify-content: left;
+        width: 100%;
     }
 
     .pages {
         display: none;
-        align-items: center;
+        margin-right: 5rem;
       }
     
       .email_phone, .email_phone svg {
@@ -614,14 +613,14 @@ footer h1 {
         background-color: #fff;
         flex-direction: column;
         margin-top: -40%;
-        font-size: 120%;
+        font-size: xx-large;
       }
     
       .email_phone {
         flex-direction: column;
         margin-top: 65%;
         margin-left: -40%;
-        font-size: 150%;
+        font-size: xx-large;
       }
     
       .navigation-toggle .bar {
@@ -759,6 +758,8 @@ footer h1 {
     
       .email_phone, .email_phone svg {
         display: none;
+        font-size: xx-large;
+
       }
     
       .navigation-toggle {
@@ -778,14 +779,14 @@ footer h1 {
         background-color: #fff;
         flex-direction: column;
         margin-top: -40%;
-        font-size: 120%;
-      }
+        font-size: xx-large;      
+    }
     
       .email_phone {
         flex-direction: column;
-        margin-top: 65%;
-        margin-left: -40%;
-        font-size: 150%;
+        margin-top: 50%;
+        margin-left: -50%;
+        font-size: xx-large;
       }
     
       .navigation-toggle .bar {
