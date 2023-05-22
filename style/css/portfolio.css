@@ -7,6 +7,17 @@
     box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  /* box-shadow: 10px 20px 10px 10px rgba(0, 0, 0, 0.1); */
+  border-bottom: 0.5px solid #d8d8d8;
+  width: auto;
+}
+
 /* Set up basic styles */
 body {
     background-color: #f2f2f2;
@@ -69,17 +80,18 @@ body {
       flex-direction: column;
       /* align-content: center; */
       justify-content: center;
-      width: 100%;
     }
 
     .catalog{
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px; 
+      width: 100%;
       /* align-items: center; */
     }
   
   .product {  
-    width: calc(33.3333% - 20px);
+    width: 100% ;
     background-color: #fff;
     box-shadow: 0 2px 6px rgba(86, 49, 49, 0.1);
     margin-bottom: 40px;
@@ -127,23 +139,17 @@ body {
 }
 
 /* Table media */
-@media (max-width: 850px) and (min-width: 450px) {
-  .catalog {
-    flex-wrap: wrap;
+@media (max-width: 900px) and (min-width: 450px) {
+  .catalog{
+    /* flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; 
+  }
+  .product{
+    width: 100%;
   }
 
-  .product {
-    width: calc(50% - 20px);
-  }
-
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 3rem;
-    height: 430px;
-    text-align: left;
-
-} 
 .networks_title{
     margin-left: 15%;
 }
@@ -167,50 +173,16 @@ body {
 }
 
 @media (max-width: 450px) {
+  .product-filter {
+    flex-wrap: wrap;
+  }
   .catalog{
+    width: 100% ;
+    display: flex;
     flex-direction: column;
   }
   .product{
-    width: 130%;
+    width: 100%;
   }
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 3rem;
-    height: 450px;
-    text-align: left;
-
-}
-
-.container-footer{
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-.container-footer-adress{
-     margin-top: -30%;
-    width: 450px;
-}
-
-.svg-links{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 30%;
-    margin-left: -100%;
-}
-
-.subscribe{
- margin-top: 20%;
- margin-left: 15%;
-}
-.subscribe_field{
-    width: 440px;
-    margin-left: -15%;
-}
-.btn_subscribe_btn{
-    margin-top: 10%;
-    margin-left: 5%;
-}
 }
 

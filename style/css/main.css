@@ -20,7 +20,7 @@ header {
     align-items: center;
     padding: 1rem;
     background-color: #ffffff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 10px 10px rgba(0, 0, 0, 0.1);
     width: auto;
 }
 
@@ -359,10 +359,29 @@ section h2 {
     padding: 0 1rem;
 }
 
+.our-works {
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative; /* Added position relative */   
+}
 .our-works img {
     margin: 15px;
     width: 350px;
     height: 250px;
+}
+.work {
+    position: absolute; /* Added position absolute */
+    width: 87% ;
+    height: 40px;
+    margin-top: 62%; /* Adjust top position */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+    padding: 10px; /* Adjust padding as needed */
+    z-index: 1; 
 }
 
 /* НАША КОМАНДА */
@@ -483,12 +502,23 @@ footer h1 {
 .subscribe {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 2rem;
+  }
+  .subscribe-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .subscribe-form p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .subscribe-form 
   .subscribe-input {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     border-radius: 4px;
     border: 1px solid #b1b1b1;
     width: 20rem;
@@ -497,7 +527,7 @@ footer h1 {
   }
   
   .btn_subscribe_btn {
-    margin-top: 1.9rem;
+    /* margin-top: 1.9rem; */
     margin-left: 2rem; 
     width: 17rem;
     height: 3rem;
@@ -515,6 +545,7 @@ footer h1 {
   .networks_title{
     display: flex;
     font-weight: bolder;
+    margin-bottom: 1rem;
   }
 
 /* small screen */
@@ -530,13 +561,19 @@ footer h1 {
         margin-left: 3rem;
     }
 }
-@media (max-width: 1275px) {
+@media (max-width: 1300px) {
     .container-our-clients {
         grid-template-columns: repeat(3, 1fr);
     }
   }
 
-@media (max-width: 1169px) and (min-width: 851px) {
+@media (max-width: 1169px) {
+    #about {
+        display: none;
+    }
+}
+
+@media (max-width: 1169px) and (min-width: 850px) {
     .container {
         flex-direction: column;
         /* width: 100%;  */
@@ -567,7 +604,9 @@ footer h1 {
 
     .subscribe{
        flex-direction: column;
+       margin-top: 5%;
        margin-left: 2rem;
+       width: 30%;
     }
 
     footer {
@@ -575,8 +614,7 @@ footer h1 {
         color: #fff;
         padding: 3rem;
         height: 330px;
-        text-align: left;
-
+        text-align: left;   
     } 
 }
 /* Table media */
@@ -746,6 +784,10 @@ footer h1 {
   
 
   @media (max-width: 450px) {
+    .registration-form {
+        width: 70%;
+    }
+
     nav {
         justify-content: center;
         width: auto;
@@ -850,7 +892,7 @@ footer h1 {
         background-color: #333;
         color: #fff;
         padding: 3rem;
-        height: 430px;
+        /* height: 430px; */
         /* text-align: left; */
 
     }
@@ -890,7 +932,7 @@ footer h1 {
     }
     .btn_subscribe_btn{
         margin-top: 10%;
-        margin-left: -5%;
+        margin-left: -30%;
     }
     .networks_title {
         width: 100%;
